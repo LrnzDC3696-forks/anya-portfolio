@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  font-family: 'Inter';
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #020024;
+  background: -webkit-gradient(linear, left top, right top, from(#020024), color-stop(0%, #589dc6), to(#ad6be8));
+  background: linear-gradient(90deg, #020024 0%, #589dc6 0%, #ad6be8 100%);
+}
+
+#page-container {
+  height: 100%;
+  padding-left: 25%;
+  padding-right: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.rounded {
+  border: none;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.white {
+  background-color: white;
+}
+
+.blue {
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  background-color: #1c6cf7;
+  color: white;
+}
+
+#sidebar {
+  border-radius: 15px;
+  padding: 2rem;
+  background-color: white;
+  text-align: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 50%;
+}
+
+#sidebar #name {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#sidebar #job-title {
+  margin-bottom: 1rem;
+}
+
+#sidebar #info {
+  margin-bottom: 1rem;
+}
+
+#content {
+  border-radius: 15px;
+  padding: 2rem;
+  background-color: white;
+  margin-left: 10px;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  height: 50%;
+}
+
+#content h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+#content p {
+  margin-bottom: 1rem;
+}
+
+#content .card-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#content .card-grid .card {
+  border-radius: 10px;
+  width: 30%;
+  height: 20%;
+  margin: 10px;
+  background-color: #e4e4e4;
+  padding: 1rem;
+}
+
+#content .card-grid .card h1 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+#content .card-grid .card p {
+  font-size: medium;
+}
+
+@media screen and (max-width: 1068px) {
+  #page-container {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #sidebar {
+    width: 100%;
+    border-radius: 0;
+  }
+  #content {
+    width: 100%;
+    border-radius: 0;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #page-container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #content {
+    width: 100%;
+  }
+  #sidebar {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
